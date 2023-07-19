@@ -53,7 +53,7 @@ def mainGame():
     newPipe1 = getRandomPipe()
     newPipe2 = getRandomPipe()
 
-    # my List of upper pipes
+    # List of upper pipes
     upperPipes = [
         {'x': SCREENWIDTH+200, 'y':newPipe1[0]['y']},
         {'x': SCREENWIDTH+200+(SCREENWIDTH/2), 'y':newPipe2[0]['y']},
@@ -181,7 +181,7 @@ def getRandomPipe():
 
 
 if __name__ == "__main__":
-    # This will be the main point from where our game will start
+    # Main point from where our game will start
     pygame.init() # Initialize all pygame's modules
     FPSCLOCK = pygame.time.Clock()
     pygame.display.set_caption('Flappy Bird')
@@ -215,5 +215,5 @@ if __name__ == "__main__":
     GAME_SPRITES['player'] = pygame.image.load(PLAYER).convert_alpha()
 
     while True:
-        welcomeScreen() # Shows welcome screen to the user until he presses a button
-        mainGame() # This is the main game function 
+        welcomeScreen()
+        mainGame() 
